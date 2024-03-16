@@ -1,0 +1,24 @@
+[project]
+name = "pcbre"
+description = "PCB Reverse Engineering package"
+authors = [
+    {name = "David Carne", email="davidcarne@gmail.com"},
+]
+version = "0"
+dependencies = [
+    "Cython",
+    "freetype-py",
+    "numpy",
+    "opencv-python",
+    "poly2tri @ git+https://github.com/davidcarne/poly2tri.python.git",
+    "pycapnp",
+    "pyopengl",
+    "pyqt6",
+    "qtpy",
+    "rtree",
+    "scipy",
+    "shapely",
+]
+
+[project.scripts]
+pcbre = "pcbre.launcher:launcher_main"
